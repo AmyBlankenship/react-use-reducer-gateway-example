@@ -1,0 +1,109 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto minmax(min-content, 20rem)  ;
+  gap: 1em;
+}
+
+h1, h2 {
+  grid-column: 1 / -1;
+}
+
+dl, dt, dd, h2 {
+  margin: 0;
+}
+
+.friends {
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: 1fr min-content;
+  gap: 1rem;
+}
+
+.friend-list {
+  padding: 0;
+  margin: 0;
+  flex: 1 0;
+  overflow: auto;
+}
+
+.friends .manage-friends {
+  flex: 0 1;
+}
+
+.friend-card {
+  border-bottom: 1px solid darkslategray;
+  padding: .5em;
+  list-style: none outside none;
+  cursor: pointer;
+}
+
+.friend-card dl {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: auto;
+  gap: .5em;
+}
+
+.friend-card dt {
+  text-align: right;
+  font-weight: 500;
+}
+
+.friend-card:nth-child(odd) {
+  background-color: rgb(245, 245, 245);
+}
+
+.edit-friend {
+  display: grid;
+  grid-template-columns: 8rem minmax(min-content, 1fr);
+  grid-template-rows: repeat( auto-fill, auto);
+  gap: .5em;
+  border: 1px solid darkslategray;
+  border-radius: 1em;
+  padding: 1rem;
+}
+
+.edit-friend h2 {
+  font-weight: 500;
+  color: darkslategray;
+}
+
+.edit-friend >   label {
+  text-align: right;
+}
+
+.edit-friend-controls {
+  grid-column: 2 / -1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: .5em;
+}
+
+.edit-friend-pet {
+  grid-column: 1 / -1;
+  border-top: 1px solid lightslategray;
+  margin-top: 1em;
+}
+
+.edit-friend-pet h3 {
+  margin: .5em 0;
+}
+
+.pet-editor label {
+  display: block;
+}
+
+.pet-editor label span {
+  display: inline-block;
+  width: 8em;
+  text-align: right;
+  padding-right: 1em;
+}
+
+.pet-editor select {
+  width: 12.8em;
+}
