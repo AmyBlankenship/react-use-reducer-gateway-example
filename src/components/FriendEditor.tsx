@@ -1,4 +1,4 @@
-import {Friend} from "../App.tsx";
+import {Friend} from "../App";
 import {useReducerGateway} from "@amy_blankenship/react-use-reducer-gateway";
 import {FC, SyntheticEvent, useCallback} from "react";
 import PetEditor from "./PetEditor.tsx";

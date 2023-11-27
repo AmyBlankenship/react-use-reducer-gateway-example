@@ -1,4 +1,4 @@
-import {Friend} from "../App.tsx";
+import {Friend} from "../App";
 import {useReducerGateway} from "@amy_blankenship/react-use-reducer-gateway";
 import {ChangeEvent, useCallback, useEffect} from "react";
 

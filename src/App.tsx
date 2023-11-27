@@ -1,6 +1,6 @@
 import {MouseEvent, useCallback, useState} from 'react'
 import './App.css'
-import FriendEditor from "./components/FriendEditor.tsx";
+import FriendEditor from "./components/FriendEditor";
 
 export type Friend = {
   firstName: string
